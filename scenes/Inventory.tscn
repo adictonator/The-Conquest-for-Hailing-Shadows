@@ -1,0 +1,148 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://assets/UI/LargeBackground.png" type="Texture" id=1]
+[ext_resource path="res://assets/UI/CloseButtonPressed.png" type="Texture" id=2]
+[ext_resource path="res://scripts/Slot.gd" type="Script" id=3]
+[ext_resource path="res://scripts/Slot.gd" type="Script" id=4]
+[ext_resource path="res://scripts/Inventory.gd" type="Script" id=5]
+
+[sub_resource type="StyleBoxTexture" id=2]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 178, 148 )
+
+[sub_resource type="StyleBoxTexture" id=3]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 178, 148 )
+
+[sub_resource type="StyleBoxTexture" id=4]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 178, 148 )
+
+[sub_resource type="StyleBoxTexture" id=1]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 178, 148 )
+
+[sub_resource type="StyleBoxTexture" id=5]
+texture = ExtResource( 2 )
+region_rect = Rect2( 0, 0, 178, 148 )
+
+[node name="Inventory" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 1 )
+expand = true
+
+[node name="Wrapper" type="GridContainer" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 100.0
+margin_top = 56.0
+margin_right = -101.0
+margin_bottom = -89.0
+columns = 4
+
+[node name="Panel" type="Panel" parent="Wrapper"]
+margin_right = 64.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 2 )
+script = ExtResource( 3 )
+
+[node name="Panel2" type="Panel" parent="Wrapper"]
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 3 )
+script = ExtResource( 4 )
+
+[node name="Panel3" type="Panel" parent="Wrapper"]
+margin_left = 136.0
+margin_right = 200.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 4 )
+script = ExtResource( 4 )
+
+[node name="Panel4" type="Panel" parent="Wrapper"]
+margin_left = 204.0
+margin_right = 268.0
+margin_bottom = 64.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel5" type="Panel" parent="Wrapper"]
+margin_top = 68.0
+margin_right = 64.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel6" type="Panel" parent="Wrapper"]
+margin_left = 68.0
+margin_top = 68.0
+margin_right = 132.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 5 )
+script = ExtResource( 4 )
+
+[node name="Panel7" type="Panel" parent="Wrapper"]
+margin_left = 136.0
+margin_top = 68.0
+margin_right = 200.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel8" type="Panel" parent="Wrapper"]
+margin_left = 204.0
+margin_top = 68.0
+margin_right = 268.0
+margin_bottom = 132.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel9" type="Panel" parent="Wrapper"]
+margin_top = 136.0
+margin_right = 64.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel10" type="Panel" parent="Wrapper"]
+margin_left = 68.0
+margin_top = 136.0
+margin_right = 132.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel11" type="Panel" parent="Wrapper"]
+margin_left = 136.0
+margin_top = 136.0
+margin_right = 200.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )
+
+[node name="Panel12" type="Panel" parent="Wrapper"]
+margin_left = 204.0
+margin_top = 136.0
+margin_right = 268.0
+margin_bottom = 200.0
+rect_min_size = Vector2( 64, 64 )
+custom_styles/panel = SubResource( 1 )
+script = ExtResource( 4 )

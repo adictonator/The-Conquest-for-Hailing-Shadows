@@ -1,0 +1,21 @@
+{
+	"color": "#ffdd6015",
+	"description": "angry sunth",
+	"display_name": "",
+	"display_name_bool": true,
+	"id": "character-1654077579.json",
+	"mirror_portraits": true,
+	"name": "Sunth",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/characters/enemies/bosses/big guy/idle/24.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}
